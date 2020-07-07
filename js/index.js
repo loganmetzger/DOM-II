@@ -11,7 +11,7 @@ navLinks.forEach(item => {
 
 // 2
 navLinks.forEach(item => {
-    item.addEventListener('mouseleave', event  =>{
+    item.addEventListener('mouseleave', event  => {
         item.style.color = 'dodgerblue';
     })
 })
@@ -35,7 +35,12 @@ paragraphs.forEach(item => {
 })
 
 // 5
-
+let imgs = document.querySelectorAll('img');
+imgs.forEach(item => {
+    item.addEventListener('dblclick', event => {
+        item.style.visibility = 'hidden'
+    })
+})
 
 
 // prevent default 
