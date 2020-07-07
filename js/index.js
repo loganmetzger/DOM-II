@@ -14,7 +14,7 @@ navLinks.forEach(item => {
     item.addEventListener('mouseleave', event  => {
         item.style.color = 'dodgerblue';
     })
-})
+});
 
 // 3
 document.body.addEventListener('keydown', event => {
@@ -45,7 +45,25 @@ imgs.forEach(item => {
 
 // prevent default 
 navLinks.forEach(item => {
-    item.addEventListener('click', (event) => {
+    item.addEventListener('click', event => {
         event.preventDefault();
     })
 })
+
+// 6
+let container = document.querySelector('.container');
+console.log(container);
+container.addEventListener('click', event => {
+    container.style.backgroundColor = 'green';
+})
+
+// 7
+let destinations = document.querySelectorAll('.destination');
+console.log(destinations);
+destinations.forEach(item  => {
+    item.addEventListener('copy', event => {
+        item.style.backgroundColor = 'purple';
+    })
+})
+
+// 8
