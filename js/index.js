@@ -67,3 +67,19 @@ destinations.forEach(item  => {
 })
 
 // 8
+document.body.addEventListener('mouseover', function(event) {
+    document.body.style.backgroundColor = 'yellow';
+
+    setTimeout(function() {
+        document.body.style.backgroundColor = 'white';
+    }, 100);
+})
+
+// 9
+let footer = document.querySelector('.footer');
+console.log(footer);
+footer.addEventListener('wheel', event => {
+    footer.style.backgroundColor = 'blue';
+})
+
+// 10
